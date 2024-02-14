@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 2rem;
+}
+.container{
+    padding: 2rem;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 2px 2px  12px lightgreen;
+    border-radius: 5px;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.input-group label{
+    width: 25%;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+#text{
+    text-transform: capitalize;
+}
+.input-group input{
+    width: 75%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid;
+    border-color: #777;
+    font-size: 1.1rem;
+    outline: none;
+    background: transparent;
+    border-radius: 0;
+}
+.input-group input::placeholder{
+    font-size: 1rem;
+}
+.input-group span{
+    position: absolute;
+    right: 17px;
+    bottom: 31px;
+    color: red;
+    font-weight: bold;
+}
+button{
+    padding: .5rem 2rem;
+    outline: none;
+    border: none;
+    background-color: lightgreen;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p{
+    margin-top: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 92%;
+        padding: 1rem;
+    }
+    .input-group{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        position: relative;
+    }
+    
+    .input-group label{
+        font-size: 1rem;
+    
+    }
+    .input-group input{
+        
+        font-size: 1rem;
+      
+    }
+    .input-group span{
+        position: absolute;
+        right: 0;
+        bottom: 36px;
+        color: red;
+        font-weight: bold;
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width:375px){
+    .input-group label{
+        font-size: .8rem;
+    
+    } 
+    .input-group input{
+        
+        font-size: .8rem;
+      
+    }
+    .input-group input::placeholder{
+        font-size: .8rem;
+    }
+    .input-group span{
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        color: red;
+        font-weight: bold;
+        font-size: .6rem;
+    }
+}
